@@ -1,0 +1,22 @@
+macaddress.txtのフォーマット
+macaddress.txtは通常、設定情報を含むテキストファイルで、以下のような形式で記述されます。通常、MACアドレス、SSID、パスワードなどの情報を含みます。
+
+
+MAC_ADDRESS=xx:xx:xx:xx:xx:xx
+SSID=myWifiNetwork
+PASSWORD=myWifiPassword
+
+
+MAC_ADDRESS: ピアデバイス（例えば右目のデバイス）のMACアドレス。
+SSID: 無線LANのSSID（ESPNOWを使わないWiFi直接通信の場合）。
+PASSWORD: 無線LANのパスワード。
+このファイルは、モジュールがデバイスの設定を読み込む際に参照します。ファイルからの読み込みは、キーと値のペアを解析し、適切な設定情報をプログラムに渡す形で行われます。
+
+JSON形式のデータのフォーマット
+右目に渡すJSON形式のデータは、位置情報を含むメッセージです。一般的に、このデータには少なくとも位置情報（例えば傾きや向き）が含まれます。フォーマットは以下のようになります。
+
+json
+Copy code
+{
+    "tilt": "left" // or "right", "up", "down" etc.
+}
