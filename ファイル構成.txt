@@ -1,0 +1,15 @@
+/ (root)
+|-- boot.py         # 初期設定
+|-- main.py         # メインスクリプト
+|-- config.py       # 設定ファイル
+|-- modules/        # モジュールディレクトリ
+    |-- __init__.py  # モジュールをパッケージとして認識させる
+    |-- 01_init.py   # 初期設定モジュール
+    |-- 02_location.py  # 位置情報生成モジュール
+    |-- 03_communication.py  # 通信モジュール
+    |-- 04_display.py  # 表示モジュール
+    |-- 05_led_control.py  # LED制御モジュール
+    |-- 06_error_handling.py  # エラー処理モジュール
+    |-- 07_other.py   # その他のモジュール
+
+
